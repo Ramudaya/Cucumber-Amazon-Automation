@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="40.188">
+    <testcase classname="Amazon product ordered" name="Login" time="6.777">
+        <system-out><![CDATA[Given user launch the browser...............................................passed
+When user enters the username...............................................passed
+And user enters the password................................................passed
+And user want to click the login summit.....................................passed
+Then user validate the login outcomes.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Amazon product ordered" name="Serach Apple Airpods Pro" time="24.221">
+        <system-out><![CDATA[When user enter the apple airpds pro........................................passed
+And user scroll down and select new apple airpods pro.......................passed
+Then user verify the selected airpods pro outcomes to next page.............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Amazon product ordered" name="Select magsafe charging case" time="6.986">
+        <failure message="element click intercepted: Element &lt;input id=&quot;add-to-cart-button&quot; name=&quot;submit.add-to-cart&quot; title=&quot;Add to Shopping Cart&quot; data-hover=&quot;Select &lt;b&gt;__dims__&lt;/b&gt; from the left&lt;br&gt; to add to Shopping Cart&quot; class=&quot;a-button-input&quot; type=&quot;submit&quot; value=&quot;Add to Cart&quot; aria-labelledby=&quot;submit.add-to-cart-announce&quot; formaction=&quot;/cart/add-to-cart/ref=dp_start-bbf_1_glance&quot;&gt; is not clickable at point (1203, 311). Other element would receive the click: &lt;div class=&quot;a-section a-spacing-none a-padding-none&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LENOVO', ip: '192.168.1.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e9736bab5d4bb4c5e8f7577d3646d087" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given user scroll down and select the mag safe charging case................passed
+When user add the selected product into the cart............................failed
+Then user  want to verify and validated the selected product apple airpods pro into the cart.skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input id="add-to-cart-button" name="submit.add-to-cart" title="Add to Shopping Cart" data-hover="Select <b>__dims__</b> from the left<br> to add to Shopping Cart" class="a-button-input" type="submit" value="Add to Cart" aria-labelledby="submit.add-to-cart-announce" formaction="/cart/add-to-cart/ref=dp_start-bbf_1_glance"> is not clickable at point (1203, 311). Other element would receive the click: <div class="a-section a-spacing-none a-padding-none">...</div>
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.1.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e9736bab5d4bb4c5e8f7577d3646d087
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at Stepdefintion.stepdifinition_amazon.user_add_the_selected_product_into_the_cart(stepdifinition_amazon.java:91)
+	at ✽.user add the selected product into the cart(file:///C:/Users/ELCOT/eclipse-workspace/Cucumber_amazon/src/test/java/Featurefiles/login.feature:40)
+]]></failure>
+    </testcase>
+</testsuite>
